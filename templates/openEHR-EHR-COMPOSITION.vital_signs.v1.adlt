@@ -1,0 +1,110 @@
+template (adl_version=2.0.5; rm_release=1.0.2; generated)
+    openEHR-EHR-COMPOSITION.vital_signs.v1.0.0
+
+specialize
+    openEHR-EHR-COMPOSITION.encounter.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    translations = <
+        ["sl"] = <
+            author = <
+                ["Organization"] = <"ACHealth">
+                ["Author"] = <"Ashier de Leon">
+                ["Date"] = <"2016-09-09">
+            >
+            language = <[ISO_639-1::sl]>
+        >
+        ["en"] = <
+            accreditation = <"">
+            author = <
+                ["Organization"] = <"ACHealth">
+                ["Author"] = <"Ashier de Leon">
+                ["Date"] = <"2016-09-09">
+            >
+            language = <[ISO_639-1::en]>
+        >
+    >
+    
+description
+    copyright = <"Copyright (c) 2016 ACHealth">
+    details = <
+        ["en"] = <
+            keywords = <"progress", "note", "encounter">
+            language = <[ISO_639-1::en]>
+            misuse = <"">
+            purpose = <"Record of encounter as a progress note.">
+            use = <"">
+        >
+        ["sl"] = <
+            keywords = <"progress", "note", "encounter">
+            language = <[ISO_639-1::sl]>
+            misuse = <"">
+            purpose = <"Record of encounter as a progress note.">
+            use = <"">
+        >
+        ["en"] = <
+            keywords = <"progress", "note", "encounter">
+            language = <[ISO_639-1::en]>
+            purpose = <"*Record of encounter as a progress note. (en)">
+        >
+    >
+    lifecycle_state = <"draft">
+    original_author = <
+        ["organisation"] = <"Ocean Informatics">
+        ["name"] = <"Thomas Beale">
+        ["date"] = <"2005-10-10">
+    >
+
+definition
+    COMPOSITION[id1.1] matches {    -- *Encounter (en)
+        /category[id4]/defining_code matches {[at1]}
+        /context[id5]/other_context[id2]/items matches {
+            allow_archetype CLUSTER[id3] matches { 
+                include
+                    archetype_id/value matches {/.*/}
+            }
+        }
+        content
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"*Encounter (en)">
+                description = <"*Generic encounter or progress note composition (en)">
+            >
+            ["id3"] = <
+                text = <"*Context detail (en)">
+                description = <"*Local context detail. (en)">
+            >
+            ["at1"] = <
+                text = <"*event (en)">
+                description = <"*event (en)">
+            >
+            ["id1.1"] = <
+                text = <"*Encounter (en)">
+                description = <"*Generic encounter or progress note composition (en)">
+            >
+        >
+        ["sl"] = <
+            ["id1"] = <
+                text = <"Encounter">
+                description = <"Generic encounter or progress note composition">
+            >
+            ["id3"] = <
+                text = <"Context detail">
+                description = <"Local context detail">
+            >
+            ["at1"] = <
+                text = <"*event (en)">
+                description = <"*event (en)">
+            >
+            ["id1.1"] = <
+                text = <"Encounter">
+                description = <"Generic encounter or progress note composition">
+            >
+        >
+    >
+
