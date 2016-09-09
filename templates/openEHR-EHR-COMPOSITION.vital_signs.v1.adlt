@@ -8,11 +8,6 @@ language
     original_language = <[ISO_639-1::en]>
     translations = <
         ["sl"] = <
-            author = <
-                ["Organization"] = <"ACHealth">
-                ["Author"] = <"Ashier de Leon">
-                ["Date"] = <"2016-09-09">
-            >
             language = <[ISO_639-1::sl]>
         >
         ["en"] = <
@@ -51,9 +46,9 @@ description
     >
     lifecycle_state = <"draft">
     original_author = <
-        ["organisation"] = <"Ocean Informatics">
-        ["name"] = <"Thomas Beale">
-        ["date"] = <"2005-10-10">
+        ["organisation"] = <"ACHealth">
+        ["name"] = <"Ashier de Leon">
+        ["date"] = <"2016-09-09">
     >
 
 definition
