@@ -1,0 +1,9 @@
+{
+  "templates" : [ {
+    "id" : "openEHR-EHR-COMPOSITION.vital_signs.v1.0.0",
+    "rmType" : "COMPOSITION",
+    "name" : "*Encounter (en)",
+    "path" : "templates/openEHR-EHR-COMPOSITION.vital_signs.v1.adlt",
+    "sha" : "6587bcf37152f1cc397d814be10aea5648d5d151"
+  } ]
+}
