@@ -161,11 +161,10 @@
     "sha" : "59ad32d20224fd149f201909ee93051652acef4a",
     "languages" : [ "en" ]
   }, {
-    "id" : "openEHR-EHR-OBSERVATION.blood_pressure.v1.0.0",
     "rmType" : "OBSERVATION",
     "name" : "Blood Pressure",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.blood_pressure.v1.adls",
-    "sha" : "2c68d5d36137c17c27e4e59fdab015072053edd8",
+    "sha" : "c722803ceea2279b74e56a606e4d4bec243af5ca",
     "languages" : [ "en", "sl", "nl", "ja", "de", "zh-cn" ]
   }, {
     "id" : "openEHR-EHR-OBSERVATION.body_mass_index.v1.0.0",
